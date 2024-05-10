@@ -1,0 +1,38 @@
+[
+  {
+    "id": 0,
+    "owner_id": 123,
+    "contact_nickname": "Mom",
+    "phone": [{
+      "number": "(212) 345-8974",
+      "type": "landline"
+      }, {
+      "number": "+19173454768",
+      "type": "cell"
+      }]
+  },
+  {
+    "id": 1,
+    "owner_id": 3,
+    "contact_nickname": "Vic",
+    "phone": [{
+      "number": "",
+      "type": "landline"
+      }, {
+      "number": "+5521964924234",
+      "type": "cell"
+      }]
+  },
+  {
+    "id": 2,
+    "owner_id": 2,
+    "contact_nickname": "Mom",
+    "phone": [{
+      "number": "+5521964924232",
+      "type": "landline"
+      }, {
+      "number": "+19173454768",
+      "type": "cell"
+      }]
+  }
+]
