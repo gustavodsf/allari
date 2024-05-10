@@ -10,6 +10,14 @@
 python main.py --person 1
 ```
 
+#### Run the test
+
+> To run the test you should use the following command:
+
+```py
+python3 -m unittest discover -s test/ -p '*_test.py'
+```
+
 #### Folder structure
 ```
 ├── data
