@@ -1,8 +1,8 @@
 from typing import Tuple, List
-from src.person import Person
-from src.contact import Contact
-from src.input_file import InputFile
-from src.relationship import Relationship
+from app.src.person import Person
+from app.src.contact import Contact
+from app.src.input_file import InputFile
+from app.src.relationship import Relationship
 import argparse
 
 parser = argparse.ArgumentParser()

@@ -1,8 +1,8 @@
 import json
-from src.person import Person
-from src.contact import Contact
-from src.phone import Phone
-from src.experience import Experience
+from app.src.person import Person
+from app.src.contact import Contact
+from app.src.phone import Phone
+from app.src.experience import Experience
 from typing import List
 
 class InputFile:

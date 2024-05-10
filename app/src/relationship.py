@@ -1,17 +1,20 @@
 from typing import List
-from src.person import Person
-from src.experience import Experience
-from src.contact import Contact
+from app.src.person import Person
+from app.src.experience import Experience
+from app.src.contact import Contact
 
 class Relationship:
 
   def get_colleges(self, personId: int, people: List[Person], contacts: List[Contact]) -> List[Person]:
-    [personInterest] = list(filter(lambda p: p.id == personId, people))
+    personInterest = list(filter(lambda p: p.id == personId, people))
     colleges = []
+    if(len(personInterest) != 1):
+      return []
+
     for person in people:
       if person.id == personId :
         continue
-      if(self.connected_by_work(personInterest, person) or self.connected_by_contact(personInterest, person, contacts)):
+      if(self.connected_by_work(personInterest[0], person) or self.connected_by_contact(personInterest[0], person, contacts)):
         colleges.append(person)
     return colleges
 
